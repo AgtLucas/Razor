@@ -6,3 +6,15 @@
 * Sua sintaxe sempre começa com o `@` e nem sempre é necessário fechar o bloco de código
 * A ideia do Razor otimizar o workflow do desenvolvedor, reduzindo a quantidade de keystrokes (teclas pressionadas) e facilitando o entendimento do código, pois se comparado com a sintaxe ASPX, Razor é muito mais semântico.
 
+### Vantagens do Razor
+
+* Não é uma linguagem nova
+* Compacta
+* Workflow fluído
+* Fácil de aprender e usar
+* Compatível com testes unitários
+ 
+### Desvantagens do Razor
+
+* O código pode ficar um pouco confusso, confundindo tags Server side com Client side
+* Pouca reusabilidade, um pouco confuso chamar um template Razor como se ele fosse um método
