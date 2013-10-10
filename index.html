@@ -179,10 +179,9 @@ if(myStringNum.IsInt() == true) {
 					    <pre><code data-trim contenteditable>
 var myDateString = "31/12//2069";
 var newDate = myDateString.AsDateTime();
-@*
-* Retorna DateTime.MinValue ou o valor especificado, 
-* se o valor da string é inválido
-*@ 
+
+// Retorna DateTime.MinValue ou o valor especificado, 
+// se o valor da string é inválido
 						</code></pre>
 					</section>
 
@@ -197,6 +196,7 @@ var newDate = myDateString.AsDateTime();
 						<pre><code data-trim contenteditable>
 var myStringBool = "True";
 var myVar = myStringBool.AsBool();
+
 // Retorna false ou o valor especificado,
 // se o valor da string é inválido
 						</code></pre>
@@ -213,6 +213,7 @@ var myVar = myStringBool.AsBool();
 						<pre><code data-trim contenteditable>
 var myStringDec = "6.660";
 var myDecNum = myStringDec.AsFloat();
+
 // Retorna 0.0 ou o valor especificado,
 // se o valor da string é inválido
 						</code></pre>
@@ -229,6 +230,7 @@ var myDecNum = myStringDec.AsFloat();
 						<pre><code data-trim contenteditable>
 var myStringDec = "6.660";
 var myDecNum = myStringDec.AsDecimal();
+
 // Retorna 0.0 ou o valor especificado,
 // se o valor da string for inválido
 						</code></pre>
@@ -244,6 +246,7 @@ int num1 = 17;
 int num2 = 76;
 
 string myString = num1.ToString() + num2.ToString();
+
 // 1776
 						</code></pre>
 					</section>
