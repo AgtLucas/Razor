@@ -81,41 +81,64 @@
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Histórico e versões</h2>
+						<h2>Vantagens do Razor</h2>
 					</section>
 					<section>
-						<p class="fragment grow highlight-blue">JSF 1.0 (11/03/2004) Especificação inicial</p>
-						<p class="fragment grow highlight-red">JSF 1.1 (27/05/2004) Correções de bugs</p>
-						<p class="fragment grow highlight-blue">JSF 1.2 (11/05/2006) Adoção inicial pela JEE</p>
-						<p class="fragment grow highlight-red">JSF 2.0 (28/06/2009) Tornou-se padrão, Ajax</p>
-						<p class="fragment grow highlight-blue">JSF 2.1 (22/10/2010) Correções de bugs</p>
-						<p class="fragment grow highlight-red">JSF 2.2 (16/04/2013) Views Stateless</p>
-					</section>
-					<section>
-						<p>JSF 1.X usava JSP como sistema de template padrão.</p>
-					</section>
-					<section>
-						<p class="fragment grow">A partir da versão 2.X, o sistema de template padrão passou a ser o Facelets.</p>
+						<p class="fragment grow highlight-blue">Não é uma linguagem nova</p>
+						<p class="fragment grow highlight-red">Compacta</p>
+						<p class="fragment grow highlight-blue">Workflow fluído</p>
+						<p class="fragment grow highlight-red">Fácil de aprender e usar</p>
+						<p class="fragment grow highlight-blue">Compatível com testes unitários</p>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>Facelets</h2>
+						<h2>Desvantagens do Razor</h2>
+					</section>
+					<section>
+						<p class="fragment grow highlight-blue">O código pode ficar um pouco confusso</p>
+						<p class="fragment grow highlight-red">Fácil confundir tags Server side com Client side</p>
+						<p class="fragment grow highlight-blue">Confuso chamar um template Razor como se ele fosse um método</p>
+						<p class="fragment grow highlight-red">Pouca reusabilidade</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Helpers</h2>
 						<p>
-							Criado por Jacob Hookom em 2005, é um sistema de template Web open source. Suporta todos os componentes do JSF e se concentra totalemnte na construção da árvore de componentes JSF, refletindo a view para uma aplicação JSF.
+							O Razor conta com alguns Helpers para facilitar a vida do desenvolvedor:
 						</p>
 					</section>
 
 					<section>
 						<p>
-							Baseado no padrão de projeto Composite, ou seja, seções de uma página ou mesmo as próprias páginas podem ser reutilizadas por outras páginas.
+							<strong class="fragment grow highlight-blue">Chart:</strong> Processa um gráfico, oferecendo os mesmos recursos como o controle de gráfico no ASP.NET 4;
 						</p>
 					</section>
 
 					<section>
 						<p>
-							Um Facelet pode ser definido como uma seção reutilizável de conteúdo ou uma sub-árvore de componentes em uma página JSF que pode ser por si mesma composta de outros Facelets. Neste sentido, um Facelet é um elemento de uma view composta que pode ser facilmente combinado com outros Facelets para construir uma view JSF que será apresentada ao usuário.
+							<strong class="fragment grow highlight-blue">Webgrid:</strong> Processa uma grade de dados, com funcionalidade de paginação e ordenação;
+						</p>
+					</section>
+
+					<section>
+						<p>
+							<strong class="fragment grow highlight-blue">Crypto:</strong> Utiliza algoritmos de hash para criar senhas devidamente criptografadas;
+						</p>
+					</section>
+
+					<section>
+						<p>
+							<strong class="fragment grow highlight-blue">WebImage:</strong> Processa uma imagem;
+						</p>
+					</section>
+
+					<section>
+						<p>
+							<strong class="fragment grow highlight-blue">WebEmail:</strong> Envia uma mensagem de e-mail;
 						</p>
 					</section>
 				</section>
