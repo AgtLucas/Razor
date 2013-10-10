@@ -203,6 +203,11 @@ var myVar = myStringBool.AsBool();
 						<p>
 							<strong class="fragment grow highlight-blue">AsFloat:</strong> Converte uma string que tem um valor decimal (ex.: "6.66") para float;
 						</p>
+						
+						<pre><code data-trim contenteditable>
+var myStringDec = "6.660";
+var myDecNum = myStringDec.AsFloat();  
+						</code></pre>
 					</section>
 					
 					<section>
@@ -214,13 +219,23 @@ var myVar = myStringBool.AsBool();
 						</p>
 						
 						<pre><code data-trim contenteditable>
-var myStringDec = "10317.425";
+var myStringDec = "6.660";
 var myDecNum = myStringDec.AsDecimal();  
 						</code></pre>
 					</section>
 					
 					<section>
-					    
+					    <p>
+							<strong class="fragment grow highlight-blue">ToString:</strong> Converte qualquer tipo para uma string;
+						</p>
+						
+						<pre><code data-trim contenteditable>
+int num1 = 17;
+int num2 = 76;
+
+string myString = num1.ToString() + num2.ToString();
+// 1776
+						</code></pre>
 					</section>
 				</section>
 
