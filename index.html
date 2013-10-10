@@ -173,12 +173,14 @@ if(myStringNum.IsInt() == true) {
 							<strong class="fragment grow highlight-blue">IsDateTime:</strong> Verifica se é um tipo data-hora válido;
 						</p>
 						<p>
-					        <strong class="fragment grow highlight-blue">AsDateTime:</strong> Converte uma string para data-hora;
+					        <strong class="fragment grow highlight-blue">AsDateTime:</strong> Converte uma string (ex.: "31/12//2069") para data-hora;
 					    </p>
 					    
 					    <pre><code data-trim contenteditable>
-var myDateString = "12/27/2012";
+var myDateString = "31/12//2069";
 var newDate = myDateString.AsDateTime();
+// Retorna DateTime.MinValue ou o valor especificado, 
+// se o valor da string for inválido
 						</code></pre>
 					</section>
 
@@ -193,6 +195,8 @@ var newDate = myDateString.AsDateTime();
 						<pre><code data-trim contenteditable>
 var myStringBool = "True";
 var myVar = myStringBool.AsBool();
+// Retorna false ou o valor especificado,
+// se o valor da string for inválido
 						</code></pre>
 					</section>
 
@@ -206,7 +210,9 @@ var myVar = myStringBool.AsBool();
 						
 						<pre><code data-trim contenteditable>
 var myStringDec = "6.660";
-var myDecNum = myStringDec.AsFloat();  
+var myDecNum = myStringDec.AsFloat();
+// Retorna 0.0 ou o valor especificado,
+// se o valor da string for inválido
 						</code></pre>
 					</section>
 					
@@ -220,7 +226,9 @@ var myDecNum = myStringDec.AsFloat();
 						
 						<pre><code data-trim contenteditable>
 var myStringDec = "6.660";
-var myDecNum = myStringDec.AsDecimal();  
+var myDecNum = myStringDec.AsDecimal();
+// Retorna 0.0 ou o valor especificado,
+// se o valor da string for inválido
 						</code></pre>
 					</section>
 					
