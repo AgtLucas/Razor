@@ -172,12 +172,28 @@ if(myStringNum.IsInt() == true) {
 						<p>
 							<strong class="fragment grow highlight-blue">IsDecimal:</strong> Verifica se é um tipo decimal válido;
 						</p>
+						<p>
+							<strong class="fragment grow highlight-blue">AsDecimal:</strong> Converte uma string para decimal;
+						</p>
+						
+						<pre><code data-trim contenteditable>
+var myStringDec = "10317.425";
+var myDecNum = myStringDec.AsDecimal();  
+						</code></pre>
 					</section>
 
 					<section>
 						<p>
 							<strong class="fragment grow highlight-blue">IsDateTime:</strong> Verifica se é um tipo data-hora válido;
 						</p>
+						<p>
+					        <strong class="fragment grow highlight-blue">AsDateTime:</strong> Converte uma string para data-hora;
+					    </p>
+					    
+					    <pre><code data-trim contenteditable>
+var myDateString = "12/27/2012";
+var newDate = myDateString.AsDateTime();
+						</code></pre>
 					</section>
 
 					<section>
@@ -187,15 +203,11 @@ if(myStringNum.IsInt() == true) {
 					</section>
 
 					<section>
-						<p>
-							<strong class="fragment grow highlight-blue">AsDecimal:</strong> Converte uma string para decimal;
-						</p>
+						
 					</section>
 					
 					<section>
-					    <p>
-					        <strong class="fragment grow highlight-blue">AsDateTime:</strong> Converte uma string para data-hora;
-					    </p>
+					    
 					</section>
 				</section>
 
