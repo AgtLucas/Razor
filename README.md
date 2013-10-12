@@ -18,5 +18,4 @@
 
 * O código pode ficar um pouco confusso, confundindo tags Server side com Client side
 * Pouca reusabilidade, um pouco confuso chamar um template Razor como se ele fosse um método
-* 
 
