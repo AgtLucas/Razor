@@ -255,6 +255,56 @@ string myString = num1.ToString() + num2.ToString();
 				<section data-background="#141414">
 					<h1>Exemplos</h1>
 					<a href="https://github.com/AgtLucas/bsi-rest-sample/tree/master/CM" target="_blank">Não clique aqui!</a>
+					
+					<section>
+						<pre><code data-trim contenteditable>
+@{ 
+    var fullName = ""; 
+    
+    if(IsPost) { 
+  
+        // Recupera o valor informado 
+        // no formulário
+        var name = Request["name"]; 
+        var lastName = Request["lastname"]; 
+        
+        fullName = name +  " " + lastName;
+        
+    } 
+}
+
+    
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <title>Objetos</title> 
+    <meta charset="utf-8" />
+  </head> 
+<body> 
+    
+  <p>Digite o seu nome e sobrenome:</p> 
+    
+  <form action="" method="post"> 
+    
+    <p><label for="name">Nome:</label> 
+      <input id="name" type="text" name="name" /> 
+    </p> 
+    
+     <p><label for="lastname">Sobrenome:</label> 
+      <input id="lastname" type="text" name="lastname" /> 
+    </p> 
+          
+    
+    <p><input type="submit" value="Enviar" /></p> 
+    
+  </form> 
+  
+  <p>Nome Completo: <b> @nomeCompleto </b></p> 
+  
+</body> 
+</html>
+						</code></pre>
+					</section>
 				</section>
 				
 				<section data-background="#08c">
